@@ -64,8 +64,8 @@ client.on('interactionCreate', async interaction => {
     if (interaction.customId === 'information') {
       embed = new Discord.MessageEmbed()
         .setTitle('Information de la communauté.')
-        .addField('Créatrice', '<@499447456678019072>\n<@933429923572482108>\n<@832913780970094612>\n<@594574555494875173>\n<@929372382135746600>', true)
-        .addField('Soutenus par', '<@683464613790220288>\n<@695212940596609075>\n<@729279395629367318>\n<@946223102382186556>\n<@251022026872061952>', true)
+        .addField('Créatrice :', '<@499447456678019072>\n<@933429923572482108>\n<@832913780970094612>\n<@594574555494875173>\n<@929372382135746600>', true)
+        .addField('Soutenus par :', '<@683464613790220288>\n<@695212940596609075>\n<@729279395629367318>\n<@946223102382186556>\n<@251022026872061952>', true)
         .addField('Liens Utiles', '[Site Officiel](https://kaoricafe.fr/)\n[Faire un don](https://ko-fi.com/kaorifr)\n[Inviter Kaori](https://discord.com/api/oauth2/authorize?client_id=855107430693077033&permissions=4398046511095&redirect_uri=https%3A%2F%2Fdiscord.gg%2Fkaori&response_type=code&scope=bot%20applications.commands%20guilds.join)\n[Contacter Discord](https://dis.gd/contact)', true)
         .setColor('#2b2d31')
         .setDescription('Bienvenue sur Kaori Café, un serveur amical et accueillant pour tous ! Nous sommes fiers de créer une communauté active et inclusive où chacun est respecté et valorisé, quelle que soit sa race, son sexe, son orientation sexuelle, son identité de genre, sa religion ou ses croyances.');
