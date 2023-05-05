@@ -13,7 +13,7 @@ client.on('messageCreate', message => {
           .setCustomId('information')
           .setLabel('Information')
           .setEmoji('1097550197581684797')
-          .setStyle('PRIMARY'),
+          .setStyle('DANGER'),
         new Discord.MessageButton()
           .setCustomId('assistance')
           .setLabel('Assistance')
@@ -23,7 +23,7 @@ client.on('messageCreate', message => {
           .setCustomId('guide')
           .setEmoji('1097550971242041435')
           .setLabel('Guide Communautaire')
-          .setStyle('SUCCESS')
+          .setStyle('DANGER')
       );
     
     const row2 = new Discord.MessageActionRow()
@@ -52,8 +52,11 @@ client.on('messageCreate', message => {
 
 <:3_dot_orange:1089244188660486174> Date de création : <t:1582620060:R>
 <:4_dot_yellow:1089244218033193022> Mis à jour : <t:1682433840:R>`)
+    const image = new Discord.MessageEmbed()
+       .setColor('#2b2d31')
+       .setImage('https://i.imgur.com/62CFolF.jpg')
 
-    message.channel.send({ embeds: [embed], components: [row1, row2] });
+    message.channel.send({ embeds: [image, embed], components: [row1, row2] });
   }
 });
 
